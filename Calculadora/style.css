@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,500&family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background: rgb(28, 28, 28);
+    background: -moz-linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(33, 33, 33, 1) 50%, rgba(0, 0, 0, 1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#container{
+    width: 300px;
+    height: 510px;
+
+    box-shadow: 0px 0px 10px 10px hsl(0, 0%, 0%, 0.3) ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#visor{
+    width: 100%;
+    height: 125px;
+
+    background: #e2e2e2;
+    box-shadow: 0px 0px 10px 6.1px hsl(0, 0%, 0%, 0.3);
+    margin-bottom: 8px;
+    border-radius: 3px;
+}
+
+#visor input{
+    width: 100%;
+    height: 100%;
+
+    text-align: right;
+    padding: 10px;
+    font-size: 42px;
+    border: 0px;
+    outline: 0px;
+}
+
+#teclas{
+    width: 100%;
+    height: calc(100% - 125px);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.tecla{
+    width: 70px;
+    height: 70px;
+
+    background: #3d3d3d;
+    box-shadow: 0px 0px 10px 6.1px hsl(0, 0%, 0%, 0.3);
+    border-radius: 3px;
+
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecla:hover {
+    background: radial-gradient(#3d3d3d , #353535);
+}

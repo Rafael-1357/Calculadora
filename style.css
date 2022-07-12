@@ -34,7 +34,7 @@ body{
     justify-content: flex-start;
 }
 
-#visor{
+#div_visor{
     width: 100%;
     height: 125px;
 
@@ -44,7 +44,7 @@ body{
     border-radius: 3px;
 }
 
-#visor input{
+#div_visor input{
     width: 100%;
     height: 100%;
 
@@ -82,6 +82,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .tecla:hover {

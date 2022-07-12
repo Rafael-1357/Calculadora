@@ -7,43 +7,41 @@
     <title>Calculadora</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div id="container">
 
-        <div id="visor">
-            <input type="text" name="numeros" id="visor" placeholder="0">
+        <div id="div_visor">
+            <input type="text" name="numeros" id="visor" value="0" dirname="fname.dir">
         </div>
 
         <div id="teclas">
             <button class="tecla"><span>CE</span></button>
-            <button class="tecla"><span>C</span></button>
+            <button class="tecla" onclick="limparCalculo()"><span>C</span></button>
             <button class="tecla"><span>%</span></button>
-            <button class="tecla"><span><</span></button>
-            <button class="tecla"><span>1</span></button>
-            <button class="tecla"><span>2</span></button>
-            <button class="tecla"><span>3</span></button>
-            <button class="tecla"><span>X</span></button>
-            <button class="tecla"><span>4</span></button>
-            <button class="tecla"><span>5</span></button>
-            <button class="tecla"><span>6</span></button>
-            <button class="tecla"><span>_</span></button>
-            <button class="tecla"><span>7</span></button>
-            <button class="tecla"><span>8</span></button>
-            <button class="tecla"><span>9</span></button>
-            <button class="tecla"><span>+</span></button>
-            <button class="tecla"><span>,</span></button>
-            <button class="tecla"><span>0</span></button>
-            <button class="tecla"><span>/</span></button>
-            <button class="tecla" style="background: rgb(204, 99, 0);"><span>=</span></button>
+            <button class="tecla" onclick="backspace()"><span><</span></button>
+            <button class="tecla" onclick="adicionarNumero(1)"><span>1</span></button>
+            <button class="tecla" onclick="adicionarNumero(2)"><span>2</span></button>
+            <button class="tecla" onclick="adicionarNumero(3)"><span>3</span></button>
+            <button class="tecla" onclick="multiplicacao()"><span>X</span></button>
+            <button class="tecla" onclick="adicionarNumero(4)"><span>4</span></button>
+            <button class="tecla" onclick="adicionarNumero(5)"><span>5</span></button>
+            <button class="tecla" onclick="adicionarNumero(6)"><span>6</span></button>
+            <button class="tecla" onclick="subtracao()"><span>_</span></button>
+            <button class="tecla" onclick="adicionarNumero(7)"><span>7</span></button>
+            <button class="tecla" onclick="adicionarNumero(8)"><span>8</span></button>
+            <button class="tecla" onclick="adicionarNumero(9)"><span>9</span></button>
+            <button class="tecla" onclick="soma()"><span>+</span></button>
+            <button class="tecla" onclick="adicionarVirgula()"><span>,</span></button>
+            <button class="tecla" onclick="adicionarNumero(0)"><span>0</span></button>
+            <button class="tecla" onclick="divisao()"><span>&divide;</span></button>
+            <button class="tecla" onclick="calcularResultado()" style="background: rgb(204, 99, 0);"><span>=</span></button>
         </div>
-
     </div>
     
+    <script src="funcoes.js"></script>
 </body>
 
 </html>
